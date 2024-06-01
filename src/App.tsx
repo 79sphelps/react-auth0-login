@@ -36,7 +36,7 @@ function App() {
     <Navbar/>
         <Switch>
           <Route path="/" exact component={ isAuthenticated ? Dashboard : HeroText} />
-          <Route path="/callback" exact component={ isAuthenticated ? Dashboard : HeroText} />
+          {/* <Route path="/callback" exact component={ isAuthenticated ? Dashboard : HeroText} /> */}
           <Route path="/profile" component={Profile}/>
           <Route path='*' component={() => { return (<div>404 , PAGE NOT FOUND</div>) }}/>
         </Switch>
